@@ -18,7 +18,20 @@ class User {
     }
 }
 
-let user = new User("NAME surnamE");
+class Girl extends User {
+
+    constructor(name, surname, age) {
+        super(name, surname);
+        this.age = age;
+    }
+
+    sayHi() {
+        super.sayHi();
+        console.log("age ->", this.age);
+    }
+}
+
+let user = new Girl("NAME", "surname", 12);
 user.sayHi();
 user.fullName = "Name splitted";
 user.sayHi();
