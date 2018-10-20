@@ -13,3 +13,4 @@ let man = {
 
 console.log(man.nameOfMeth());
 console.log(man["nameOfMeth2"]());
+console.log(man[methodname]());
