@@ -1,0 +1,7 @@
+{
+  "name": "js_base_i",
+  "version": "1.0.0",
+  "dependencies": {
+    "debug": "^4.1.0"
+  }
+}
