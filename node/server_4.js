@@ -7,6 +7,12 @@ new http.Server((req, resp) => {
     let parsedURl = url.parse(req.url, true);
 
     if (parsedURl.pathname === "/echo" && parsedURl.query.msg) {
+        resp.once("drain", () => { //some action
+            
+        });
+        resp.on("close", () => { //some action
+
+        });
         resp.end(parsedURl.query.msg);
     } else {
         resp.statusCode = 404;
